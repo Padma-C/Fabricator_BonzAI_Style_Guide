@@ -1,0 +1,101 @@
+@import 'variables';
+
+select,
+.select {
+	background: $alabaster;
+	font-family: Nunito Sans;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 30px;
+	letter-spacing: 0.03em;
+	text-align: left;
+	height: 100%;
+
+	padding: 5px 12px 5px 5px;
+	border: 1px solid $alabaster;
+	border-right: 1px solid #000000;
+	border-radius: $buttonRadius;
+
+	&:nth-last-of-type(n) {
+		border-radius: 0;
+	}
+
+	&:last-of-type {
+		border-right: none;
+		border-radius: $buttonRadius;
+	}
+
+	@media all and (max-width: 900px) {
+		border-right: none;
+		margin-bottom: 10px;
+	}
+}
+
+.select-container {
+	height: 90px;
+	@media all and (max-width: 900px) {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+}
+
+.calendar-checkin {
+	background: $alabaster;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	height: 100%;
+	font-size: 16px;
+	border-right: 1px solid #000000;
+	border-bottom-left-radius: $buttonRadius;
+	border-top-left-radius: $buttonRadius;
+
+	@media all and (max-width: 800px) {
+		border-right: none;
+	}
+}
+
+.calendar-checkout {
+	background: $alabaster;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	height: 100%;
+	font-size: 16px;
+	border-right: 1px solid #000000;
+	border-bottom-left-radius: $buttonRadius;
+	border-top-left-radius: $buttonRadius;
+
+	@media all and (max-width: 800px) {
+		border-right: none;
+	}
+}
+
+.booking-container {
+	margin-top: 5%;
+	width: 90%;
+	background: $alabaster;
+	@include flexCenter(row, space-around);
+	border: 1px solid $alabaster;
+	box-shadow: $boxShadow;
+	border-bottom-left-radius: $buttonRadius;
+	border-top-left-radius: $buttonRadius;
+
+	&:last-of-type {
+		border-bottom-right-radius: $buttonRadius;
+		border-top-right-radius: $buttonRadius;
+		border-right: none;
+	}
+
+	@media all and (max-width: 800px) {
+		@include flexCenter(column, center);
+	}
+}
+
+.widget-wrapper-center {
+	@include flexCenter(row, center);
+}

@@ -1,0 +1,26 @@
+@import 'variables';
+@import 'mixins';
+
+.navigation {
+	@include flexCenter(row, space-between);
+	@include blocks(121px, $eggshellBlue);
+	box-shadow: $boxShadow;
+	margin: 0;
+	ul {
+		list-style-type: none;
+		display: flex;
+		align-items: center;
+		@media all and (max-width: 900px) {
+			@include flexCenter(column, flex-start);
+		}
+	}
+	ul li {
+		list-style-type: none;
+		margin-right: 20px;
+	}
+
+	@media all and (max-width: 900px) {
+		@include flexCenter(column, flex-start);
+		@include blocks(400px, $eggshellBlue);
+	}
+}

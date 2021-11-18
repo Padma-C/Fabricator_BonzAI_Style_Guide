@@ -1,0 +1,55 @@
+@import 'variables';
+@import 'mixins';
+.about {
+	@include blocks(auto, $alabaster);
+	font-size: 16px;
+	margin-top: 0;
+	h1 {
+		margin-top: 4rem;
+	}
+	p {
+		padding: 2rem 5rem;
+	}
+	button {
+		margin-bottom: 3rem;
+		margin-bottom: 3rem;
+	}
+}
+
+.about-your-booking {
+	margin: 0;
+	padding-bottom: 4%;
+	width: 70%;
+	border-radius: 6px;
+	background-color: $alabaster;
+	font-size: 16px;
+	margin-left: 10%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	h1 {
+		margin-top: 4rem;
+	}
+	img {
+		margin-left: 2rem;
+	}
+}
+ul {
+	li {
+		align-items: left;
+		list-style-type: none;
+		margin: 20px;
+	}
+}
+
+.main-wrapper {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	margin: 5%;
+	@media all and (max-width: 900px) {
+		width: 82%;
+		@include flexCenter(column, space-between);
+		margin: 0;
+	}
+}

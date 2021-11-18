@@ -1,0 +1,13 @@
+colors:
+  primary:
+    Dark: 'rgb(0, 0, 0)'
+    Light: 'rgb(242, 242, 242)'
+  secondary:
+    Dark Charcoal: 'rgb(51, 51, 51)'
+    Elf Green: 'rgb(12, 37, 31)'
+    Magic Black: 'rgb(43, 35, 25)'
+    Eggshell Blue: 'rgb(0, 194, 186)'
+    Sky Blue: 'rgb(111, 243, 252)'
+    Bermuda Blue: 'rgb(136, 197, 195)'
+    Gold Pink: 'rgb(242, 212, 174)'
+    Alabaster: 'rgb(243, 242, 238)'

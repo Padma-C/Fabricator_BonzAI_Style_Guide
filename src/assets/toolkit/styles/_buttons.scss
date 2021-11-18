@@ -1,0 +1,91 @@
+@import 'variables';
+@import 'mixins';
+
+.button-center {
+	@include flexCenter(row, center);
+}
+
+.button {
+	width: 130px;
+	height: 62px;
+	border-radius: $buttonRadius;
+	border: 1px solid $elfGreen;
+	background-color: $elfGreen;
+	color: $pureWhite;
+	box-shadow: $boxShadow;
+
+	&:hover {
+		color: $goldPink;
+		cursor: pointer;
+	}
+}
+
+.button-pointer {
+	background: none;
+	border: none;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 30px;
+	letter-spacing: 0em;
+	text-align: left;
+	margin: 10px;
+	text-decoration: none;
+	width: 130px;
+	height: 62px;
+	color: $elfGreen;
+
+	&:hover {
+		color: $elfGreen;
+		cursor: pointer;
+		text-shadow: $boxShadow;
+	}
+}
+
+/*Checkbox*/
+.checkbox-label-name {
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+	margin: 5px;
+	cursor: pointer;
+}
+
+.checkbox-custom {
+	display: none;
+	+ {
+		.checkbox-label-name {
+			&:before {
+				background: $pureWhite;
+				border-radius: 50%;
+				border: 3px solid $elfGreen;
+				display: inline-block;
+				vertical-align: middle;
+				width: 8px;
+				height: 8px;
+				padding: 5px;
+				margin-right: 10px;
+				box-shadow: $boxShadow;
+				content: '';
+			}
+		}
+	}
+	&:checked {
+		+ {
+			.checkbox-label-name {
+				&:after {
+					padding: 2px;
+					position: absolute;
+					width: 1px;
+					height: 5px;
+					border: solid $eggshellBlue;
+					border-width: 0 3px 3px 0;
+					transform: rotate(45deg);
+					top: 5px;
+					left: 7px;
+					content: '';
+				}
+			}
+		}
+	}
+}

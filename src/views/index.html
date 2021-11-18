@@ -1,0 +1,65 @@
+---
+title: Overview | Fabricator
+fabricator: true
+---
+
+<div><h1>Bonz.AI - Our Brand Story</h1></div>
+<img class="HeroBanner-image" />
+<p>
+	Bonz.AI's brand promise is to offer a personalized stay like none other, by
+	bringing the ultimate contact-less experience at your fingertips. In order
+	for customers to truly experience Bonz.AI's brand promise, it is key to
+	offer a consistent experience across all touchpoints.
+</p>
+<p>
+	The brand and style guidelines aim to offer a framework for achieving just
+	that.
+</p>
+<br />
+<!--
+	<p>This guide contains real working examples, code snippets, documentation, and style guidelines.</p>
+	<h2>Usage</h2>
+-->
+<h2>Logo</h2>
+<img class="Logo-image" />
+<p>
+	Bonz.AI's logo is inspired by the cogwheel symbol. It represents technology
+	and innovation.
+</p>
+<br />
+<h2>Setup</h2>
+<p>You can use this style guide by adding the link below to your page.</p>
+<pre
+	class="language-markup"
+><code class="language-markup">&lt;link rel=&quot;stylesheet&quot; href=&quot;assets/toolkit/styles/toolkit.css&quot;&gt;</code></pre>
+<!--
+	<pre class="language-markup"><code class="language-markup">&lt;script src=&quot;assets/toolkit/scripts/toolkit.js&quot;&gt;&lt;/script&gt;</code></pre>
+-->
+<br />
+<h2>Brand Colors</h2>
+
+{{#each toolkit.colors}}
+<div class="f-color-chips">
+	{{#each this}}
+	<div class="f-color-chip">
+		<div class="f-color-chip__name">{{@key}}</div>
+		<div class="f-color-chip__color">{{this}}</div>
+	</div>
+	{{/each}}
+</div>
+{{/each}}
+
+<h2>Typography</h2>
+
+<p>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam enim sunt
+	sapiente molestias, sed dicta inventore consectetur beatae asperiores,
+	aliquid laboriosam animi, praesentium repudiandae et, quam saepe sint
+	cupiditate reiciendis.
+</p>
+
+<h1>Heading Level 1</h1>
+<h2>Heading Level 2</h2>
+<h3>Heading Level 3</h3>
+<h4>Heading Level 4</h4>
+<h5>Heading Level 5</h5>

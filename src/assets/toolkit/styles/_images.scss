@@ -1,0 +1,64 @@
+@import 'variables';
+
+.HeroBanner-image {
+	background-image: url(/assets/toolkit/images/herobanner.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 50vw;
+	width: 100%;
+	border: none;
+	box-shadow: $boxShadow;
+}
+
+.stay-image {
+	background-image: url(/assets/toolkit/images/herobanner.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 250px;
+	width: 345px;
+	border: none;
+	box-shadow: $boxShadow;
+}
+
+.Logo-image {
+	content: url(/assets/toolkit/images/logo.svg);
+	height: 45.44px;
+
+	@media all and (max-width: 900px) {
+		margin-top: 4px;
+	}
+
+	&:hover {
+		transform: scale(1.05);
+		cursor: pointer;
+	}
+}
+
+.facebook-image {
+	content: url(/assets/toolkit/images/facebook-logo-white.svg);
+	height: 45.44px;
+	&:hover {
+		filter: grayscale(100%) sepia(100%);
+		cursor: pointer;
+	}
+}
+
+.instagram-image {
+	content: url(/assets/toolkit/images/instagram-logo-white.svg);
+	height: 45.44px;
+	&:hover {
+		filter: grayscale(100%) sepia(100%);
+		cursor: pointer;
+	}
+}
+
+.twitter-image {
+	content: url(/assets/toolkit/images/twitter-logo-white.svg);
+	height: 45.44px;
+	&:hover {
+		filter: grayscale(100%) sepia(100%);
+		cursor: pointer;
+	}
+}

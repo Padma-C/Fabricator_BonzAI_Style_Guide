@@ -1,0 +1,24 @@
+@import 'variables';
+@import 'mixins';
+
+footer {
+	@include flexCenter(column, center);
+	@include blocks(276px, $magicBlack);
+	box-shadow: $boxShadow;
+	color: #f3f2ee;
+  margin:0;
+  bottom:0;
+}
+
+.footer-items {
+	@include flexCenter(row, center);
+	ul {
+		list-style-type: none;
+		display: flex;
+		align-items: center;
+	}
+	ul li {
+		list-style-type: none;
+		margin-right: 20px;
+	}
+}

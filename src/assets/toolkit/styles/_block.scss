@@ -1,0 +1,15 @@
+@import 'variables';
+@import 'mixins';
+
+.block {
+	@include blocks(121px, $eggshellBlue);
+}
+
+.block-highlight {
+	width: 100%;
+	height: 11px;
+	left: 0px;
+	top: 120px;
+	background: $skyyBlue;
+	box-shadow: $boxShadow;
+}
